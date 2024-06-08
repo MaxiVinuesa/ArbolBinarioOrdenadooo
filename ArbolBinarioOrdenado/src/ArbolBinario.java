@@ -1,6 +1,6 @@
-package ArbolBinario;
+
 public class ArbolBinario {
-    protected Nodo raiz;
+    protected static Nodo raiz;
 
     public ArbolBinario() {
         raiz = null;
@@ -10,7 +10,7 @@ public class ArbolBinario {
         this.raiz = raiz;
     }
 
-    public Nodo getRaiz() {
+    public static Nodo getRaiz() {
         return raiz;
     }
 

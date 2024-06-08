@@ -1,4 +1,4 @@
-package ArbolBinario;
+
 import java.util.Vector;
 
 public class PilaVector {

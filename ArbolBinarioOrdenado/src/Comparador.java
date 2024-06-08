@@ -1,4 +1,4 @@
-package ArbolBinarioOrdenado;
+
 
 public interface Comparador { // class
 

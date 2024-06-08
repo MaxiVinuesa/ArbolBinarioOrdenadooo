@@ -1,12 +1,8 @@
-package ArbolBinario;
-package ArbolBinarioOrdenado;
-
-package ArbolBinarioOrdenado;
 
 
 import java.util.Scanner;
 import ArbolBinario.*;
-import ArbolBinarioOrdenado.*;
+
 
 public class Main {
 
@@ -44,8 +40,8 @@ public class Main {
             Estudiante estudianteBuscado;
             Nodo n = ArbolBinarioBusqueda.buscar(new Estudiante(10));
 
-            if ((n != null) && (n.valorNodo() instanceof Estudiante)){
-                estudianteBuscado = (Estudiante) n.valorNodo();
+            if ((n != null) && (n.getNodo() instanceof Estudiante)){
+                estudianteBuscado = (Estudiante) n.getNodo();
                 System.out.println("Buscado: " + estudianteBuscado.toString());
             } else {
                 System.out.println("Buscado: NO ENCONTRADO");
@@ -55,7 +51,7 @@ public class Main {
         }
 
         try{
-            arbolBinarioBusqueda.eliminar(new Estudiante(15));
+            ArbolBinarioBusqueda.eliminar(new Estudiante(15));
         }catch(Exception e){
             System.out.println("Error al Eliminar! " + e.getMessage());
         }
@@ -66,7 +62,7 @@ public class Main {
         try {
             //Recorrido
             System.out.println("\nPreorden");
-            ArbolBinario.preorden(arbolBinarioBusqueda.raizArbol());
+            ArbolBinario.preOrden(ArbolBinarioBusqueda.getRaiz());
 
         } catch (Exception e) {
             System.out.println("Error al recorrer! " + e.getMessage());
@@ -75,7 +71,7 @@ public class Main {
         try {
             //Recorrido
             System.out.println("\nInorden");
-            ArbolBinario.inorden(arbolBinarioBusqueda.raizArbol());
+            ArbolBinario.inOrden(ArbolBinario.getRaiz());
             
 
         } catch (Exception e) {
@@ -84,7 +80,7 @@ public class Main {
         
         try {
             System.out.println("\nPostorden");
-            ArbolBinario.postorden(arbolBinarioBusqueda.raizArbol());
+            ArbolBinario.postOrden(ArbolBinario.getRaiz());
 
         } catch (Exception e) {
             System.out.println("Error al recorrer! " + e.getMessage());

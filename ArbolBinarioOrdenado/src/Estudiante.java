@@ -1,4 +1,4 @@
-package ArbolBinarioOrdenado;
+
 
 public class Estudiante implements Comparador {
 

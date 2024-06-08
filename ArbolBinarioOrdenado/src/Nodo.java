@@ -1,4 +1,4 @@
-package ArbolBinario;
+
 
 public class Nodo {
     protected Object dato;
@@ -45,5 +45,10 @@ public class Nodo {
         System.out.print(dato + " ");
     }
 
+    public void nuevoValor(Object nodo) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'nuevoValor'");
+    }
 
+    
 }
